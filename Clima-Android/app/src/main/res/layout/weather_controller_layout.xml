@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,4 +9,52 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.londonappbrewery.climapm.WeatherController" />
+    tools:context="com.londonappbrewery.climapm.WeatherController" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/changeCityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="null"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/change_city_symbol_small" />
+
+        <TextView
+            android:id="@+id/tempTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_temp"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/weatherSymbolIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/cloudy2" />
+
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/default_location"
+        android:textColor="#ffffff"
+        android:textSize="42sp" />
+</RelativeLayout>
