@@ -10,4 +10,4 @@ Current functionality:
 
 # App Demo
 
-![](app-demo.gif)
+<img src="app-demo.gif" width="200" height="354">
