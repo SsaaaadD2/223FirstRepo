@@ -23,7 +23,7 @@
             android:id="@+id/changeCityButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="null"
+            android:background="@null"
             android:scaleType="fitEnd"
             app:srcCompat="@drawable/change_city_symbol_small" />
 
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:text="@string/default_temp"
             android:textColor="#ffffff"
-            android:textSize="36sp" />
+            android:textSize="52sp" />
 
     </LinearLayout>
 
